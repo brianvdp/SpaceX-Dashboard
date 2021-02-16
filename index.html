@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+        <script type="scripts/main.js" defer></script>
+	</head>
+
+	<body>
+        <header>
+            <img src="images/spacex.png">
+        </header>
+		<div class="container">
+			<canvas id="myChart"></canvas>
+		</div>
+
+		<script>
+			var myChart = document.getElementById('myChart').getContext('2d');
+
+			var Chart = new Chart(myChart, {
+				type:'bar', //bar
+				data:{
+        			labels: ['2013', '2014', '2015', '2016', '2017'],
+        			datasets: [{
+        				label:'bedrag',
+        				data:[
+        					500000,
+        					400000,
+        					300000,
+        					200000,
+        					100000,
+        					0
+        				],
+        				backgroundColor:[
+               			'darkblue',
+                		'darkblue',
+                		'rgba(255, 206, 86, 0.2)',
+                		'rgba(75, 192, 192, 0.2)',
+                		'rgba(153, 102, 255, 0.2)'
+            			]
+        			}]
+    			},
+    		options:{}
+		});
+		</script>
+	</body>
+</html>   
