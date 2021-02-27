@@ -6,46 +6,36 @@
 		<title>Dashboard</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="styles/dashboard.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-        <script type="scripts/main.js" defer></script>
+        <script src="scripts/main.js" defer></script>
 	</head>
 
 	<body>
-        <header>
-            <img src="images/spacex.png">
+        <header class="grid-item header">
+            <img src="images/spacex.png" >
         </header>
-		<div class="container">
+		
+        <div class="grid-item fuel" id="fuel">
 			<canvas id="myChart"></canvas>
 		</div>
 
-		<script>
-			var myChart = document.getElementById('myChart').getContext('2d');
+        <div class="grid-item gForce" id="gForce">
+            <canvas id="myChart2"></canvas>
+        </div>
 
-			var Chart = new Chart(myChart, {
-				type:'bar', //bar
-				data:{
-        			labels: ['2013', '2014', '2015', '2016', '2017'],
-        			datasets: [{
-        				label:'bedrag',
-        				data:[
-        					500000,
-        					400000,
-        					300000,
-        					200000,
-        					100000,
-        					0
-        				],
-        				backgroundColor:[
-               			'darkblue',
-                		'darkblue',
-                		'rgba(255, 206, 86, 0.2)',
-                		'rgba(75, 192, 192, 0.2)',
-                		'rgba(153, 102, 255, 0.2)'
-            			]
-        			}]
-    			},
-    		options:{}
-		});
-		</script>
+        <div class="grid-item range" id="range">
+            <p id="rangeText">350.000</p>
+            <p id="rangeText1">km remaining range</p>
+        </div>
+
+        <div class="grid-item temp" id="temp">
+            <p id="tempText">-20&deg;</p>
+            <p id="tempText1">Outside temperature</p>           
+        </div>
+
+        <div class="grid-item grafiek" id="grafiek">
+            <canvas id="myChart3"></canvas>
+        </div>
 	</body>
 </html>   

@@ -1,0 +1,125 @@
+body {
+	background-color: #020738;
+	color: white;
+	font-family: 'Product Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	display: grid;
+  	grid-template-columns: 1fr 1fr;
+
+  	grid-template-areas: 
+        "header header"
+        "fuel gForce"
+        "range temp"
+        "grafiek grafiek";
+}	
+
+
+.header{
+	grid-area: header;
+}
+
+.fuel{
+	grid-area: fuel;
+}
+
+.gForce{
+	grid-area: gForce;
+}
+
+.range{
+	grid-area: range;
+}
+
+.temp{
+	grid-area: temp;
+}
+
+.grafiek{
+	grid-area: grafiek;
+}
+
+header{
+	background-color: #2A454E;
+	  padding: 1.5em 2em;
+}
+
+header img{
+	display: block;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fuel,.gForce,.range,.temp,.grafiek{
+	margin-top: 2em;
+}
+
+#fuel{
+	margin-right: auto;
+	margin-left: auto;
+	width: 13em;
+	padding: 0;
+}
+
+#gForce{
+	margin-right: auto;
+	margin-left: auto;
+	width: 13em;
+	padding: 0;
+}
+
+#range{
+	margin-left: auto;
+	margin-right: auto;
+	width: 11em;
+	border-radius: 25px;
+	background-color: #282D5E;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#temp{
+	margin-left: auto;
+	margin-right: auto;
+	width: 11em;
+	border-radius: 25px;
+	background-color: #282D5E;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#rangeText{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+#rangeText1{
+	font-family: 'Product Sans Thin', sans-serif;	
+	text-align: center;
+}
+
+#tempText{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+#tempText1{
+	font-family: 'Product Sans Thin', sans-serif;	
+	text-align: center;
+}
+
+
+#grafiek{
+	margin-top: 3em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 22em;
+	padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px){
+	
+}
