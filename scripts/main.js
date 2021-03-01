@@ -17,7 +17,7 @@
                     legend: {
                         labels: {
                             fontColor: 'white',
-                            fontSize: 15
+                            fontSize: 20
                         }
                     },
                 aspectRatio: 1,
@@ -55,7 +55,7 @@
             legend: {
                 labels: {
                     fontColor: 'white',
-                    fontSize: 15
+                    fontSize: 20
                 }
             },
             aspectRatio: 0.8
@@ -103,11 +103,14 @@
             legend: {
                 labels: {
                     fontColor: 'white',
-                    fontSize: 15
-                }
+                    fontSize: 20
+                },
+
             },
-            aspectRatio: 1
+            aspectRatio: 1.2
     }
 });
+
+
 
 

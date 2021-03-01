@@ -41,7 +41,7 @@ body {
 
 header{
 	background-color: #2A454E;
-	  padding: 1.5em 2em;
+	padding: 1.5em 2em;
 }
 
 header img{
@@ -121,5 +121,174 @@ header img{
 }
 
 @media only screen and (min-width: 768px){
-	
+
+#fuel{
+	width: 20em;
+	padding-left: 2em;
+}
+
+#gForce{
+	width: 20em;
+	padding-right: 2em;
+}
+
+#range{
+	width: 20em;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-left: 2em;
+}
+
+#temp{
+	width: 20em;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-right: 2em;
+}
+
+#rangeText{
+	font-size: 35px;
+}
+
+#rangeText1{
+	font-size: 30px;
+}
+
+#tempText{
+	font-size: 35px;
+}
+
+#tempText1{
+	font-size: 30px;
+}
+
+#grafiek{
+	margin-top: 3em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 40em;
+	padding-bottom: 40px;
+}
+
+
+}
+
+@media only screen and (min-width: 1024px){
+	body {
+  		grid-template-columns: 1fr 1fr 1fr;
+
+  		grid-template-areas: 
+       		"header header header"
+        	"fuel gForce gForce"
+        	"fuel gForce gForce"
+        	"grafiek grafiek range"
+        	"grafiek grafiek temp";
+		}
+
+	#fuel{
+		width: 27em;
+		padding-left: 3em;
+		padding-bottom: 5em; 
+	}
+
+	#gForce{
+		width: 27em;
+		padding-bottom: 5em;
+	}
+
+	#range{
+		margin-right: 4em;
+		margin-left: 0;
+	}
+
+	#temp{
+		margin-right: 4em;
+		margin-left: 0;
+	}	
+
+	#grafiek{
+		margin-top: 4em;
+		margin-right: auto;
+		margin-left: auto;
+		width: 36em;
+		padding-bottom: 40px;
+}
+
+}
+
+@media only screen and (min-width: 1280px){
+	body {
+  	grid-template-columns: 1fr 1fr 1fr;
+
+  	grid-template-areas: 
+        "header header header"
+        "fuel gForce range"
+        "fuel gForce temp"
+        "grafiek grafiek grafiek"
+        "grafiek grafiek grafiek";
+	}
+
+	header{
+		padding: 2em 2em;
+	}
+
+	header img{
+		display: block;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#fuel{
+		width: 22em;
+		padding-left: 2em;
+	}
+
+	#gForce{
+		width: 22em;
+		padding-right: 0em;
+	}
+
+	#range{
+		width: 18em;
+		max-height: 12em;
+		padding: 0;
+		margin-top: 4em;
+		margin-left: 2em;
+	}
+
+	#temp{
+		width: 18em;
+		max-height: 12em;
+		margin-left: 2em;
+		margin-top: 0em;
+		padding: 0;
+	}
+
+	#rangeText{
+		font-size: 25px;
+		padding-top: 20px;
+	}
+
+	#rangeText1{
+		font-size: 20px;
+	}
+
+	#tempText{
+		font-size: 25px;
+		padding-top: 20px;
+	}
+
+	#tempText1{
+		font-size: 20px;
+	}
+
+	#grafiek{
+	margin-top: 3em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 60em;
+	padding-bottom: 40px;
+}
+
 }
