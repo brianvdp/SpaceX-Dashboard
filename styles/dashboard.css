@@ -51,28 +51,34 @@ header img{
 	margin-right: auto;
 }
 
+h1{
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 1em;
+}
+
 .fuel,.gForce,.range,.temp,.grafiek{
-	margin-top: 2em;
+	margin-top: 1em;
 }
 
 #fuel{
 	margin-right: auto;
 	margin-left: auto;
-	width: 13em;
+	width: 10em;
 	padding: 0;
 }
 
 #gForce{
 	margin-right: auto;
 	margin-left: auto;
-	width: 13em;
+	width: 10em;
 	padding: 0;
 }
 
 #range{
 	margin-left: auto;
 	margin-right: auto;
-	width: 11em;
+	width: 10em;
 	border-radius: 25px;
 	background-color: #282D5E;
 	padding-top: 20px;
@@ -82,7 +88,7 @@ header img{
 #temp{
 	margin-left: auto;
 	margin-right: auto;
-	width: 11em;
+	width: 10em;
 	border-radius: 25px;
 	background-color: #282D5E;
 	padding-top: 20px;
@@ -113,7 +119,7 @@ header img{
 
 
 #grafiek{
-	margin-top: 3em;
+	margin-top: 2em;
 	margin-right: auto;
 	margin-left: auto;
 	width: 22em;
@@ -121,6 +127,11 @@ header img{
 }
 
 @media only screen and (min-width: 768px){
+
+h1{
+	text-align: center;
+	font-size: 30px;
+}
 
 #fuel{
 	width: 20em;
@@ -186,28 +197,32 @@ header img{
 		}
 
 	#fuel{
-		width: 27em;
-		padding-left: 3em;
-		padding-bottom: 5em; 
+		width: 25em;
+		padding-left: 8em;
+		padding-bottom: 3em; 
 	}
 
 	#gForce{
-		width: 27em;
-		padding-bottom: 5em;
+		width: 24em;
+		padding-bottom: 3em;
 	}
 
 	#range{
 		margin-right: 4em;
 		margin-left: 0;
+		padding-bottom: 0;
+		margin-bottom: 40px;
 	}
 
 	#temp{
 		margin-right: 4em;
 		margin-left: 0;
+		padding-bottom: 0;
+		margin-bottom: 40px;
 	}	
 
 	#grafiek{
-		margin-top: 4em;
+		margin-top: 0;
 		margin-right: auto;
 		margin-left: auto;
 		width: 36em;
@@ -217,35 +232,33 @@ header img{
 }
 
 @media only screen and (min-width: 1280px){
-	body {
-  	grid-template-columns: 1fr 1fr 1fr;
 
-  	grid-template-areas: 
-        "header header header"
-        "fuel gForce range"
-        "fuel gForce temp"
-        "grafiek grafiek grafiek"
-        "grafiek grafiek grafiek";
-	}
+	body{ 
+	  	grid-template-areas: 
+       		"header header header"
+        	"fuel range grafiek"
+        	"gForce temp grafiek";
+		}
 
 	header{
-		padding: 2em 2em;
+		padding: 1.5em 1.5em;
 	}
 
 	header img{
 		display: block;
-		width: 300px;
+		width: 230px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	#fuel{
-		width: 22em;
-		padding-left: 2em;
+		width: 15em;
+		padding-left: 1em;
+		padding-bottom: 0;
 	}
 
 	#gForce{
-		width: 22em;
+		width: 15em;
 		padding-right: 0em;
 	}
 
@@ -253,15 +266,17 @@ header img{
 		width: 18em;
 		max-height: 12em;
 		padding: 0;
-		margin-top: 4em;
+		margin-top: 5em;
 		margin-left: 2em;
+		margin-right: 2em;
 	}
 
 	#temp{
 		width: 18em;
 		max-height: 12em;
 		margin-left: 2em;
-		margin-top: 0em;
+		margin-top: 8em;
+		margin-right: 2em;
 		padding: 0;
 	}
 
@@ -287,8 +302,9 @@ header img{
 	margin-top: 3em;
 	margin-right: auto;
 	margin-left: auto;
-	width: 60em;
+	width: 38em;
 	padding-bottom: 40px;
+	padding-right: 2em;
 }
 
 }

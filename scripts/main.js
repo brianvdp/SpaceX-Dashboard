@@ -17,11 +17,12 @@
                     legend: {
                         labels: {
                             fontColor: 'white',
-                            fontSize: 20
-                        }
+                            fontSize: 20,
+                        },
+                        display: false
                     },
-                aspectRatio: 1,
-                cutoutPercentage: 75,
+                aspectRatio: 1.2,
+                cutoutPercentage: 75
 
                 }
             });
@@ -53,12 +54,14 @@
 
             },
             legend: {
+                display: false,
                 labels: {
                     fontColor: 'white',
-                    fontSize: 20
+                    fontSize: 20,
                 }
             },
             aspectRatio: 0.8
+
     }
 });
 
@@ -101,6 +104,7 @@
 
             },
             legend: {
+                display: false,
                 labels: {
                     fontColor: 'white',
                     fontSize: 20
@@ -108,6 +112,7 @@
 
             },
             aspectRatio: 1.2
+
     }
 });
 
